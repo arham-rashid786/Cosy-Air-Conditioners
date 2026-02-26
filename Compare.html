@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: rgb(17, 17, 17);
+      color: #fff;
+    }
+
+    .compare-card {
+      border: 1px solid #555;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px;
+      background: #222;
+    }
+
+    .compare-card img {
+      width: 100px;
+      height: auto;
+    }
+
+    .compare-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .compare-dropdown {
+      margin-bottom: 20px;
+    }
+
+    select,
+    button {
+      margin-right: 10px;
+    }
+
+    #product1{
+      background-color: rgb(17, 17, 17);
+      color: rgb(200, 200, 200);
+      border: 1px solid rgb(180, 180, 180) ;
+    }
+        #product2{
+      background-color: rgb(17, 17, 17);
+      color: rgb(200, 200, 200);
+      border: 1px solid rgb(180, 180, 180) ;
+    }
+    .label{
+font-size: 18px;
+font-weight: 400;
+    }
+    #compareBtn:hover{
+      background-color: rgb(17, 17, 17);
+border: 1px solid rgb(59, 130, 246);
+    }
+    #compare-title{
+      font-size: 40px;
+      font-weight: 700;
+    }
+   
+  </style>
+</head>
+
+<body>
+
+     <!-- Nabar Start  -->
+     <nav >
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top "id=navbar data-aos="fade-down">
+      <div class="container-fluid">
+  <img  class="nav-logo mt-2 " src="LOGO (1).png" alt="Logo">
+        <a class="navbar-brand ms-2" href="#" id="navbar-brand"><h4 class="logo-head mb-0 mt-0">COSY</h4><p class="logo-text mb-0 mt-0 ">AIR CONDITIONERS</p></a>
+        
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto me-5" id="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="Index.html" id="nav-link">Home</a>
+            <a class="nav-link active" aria-current="page" href="Products.html" id="nav-link">Products</a>
+            <a class="nav-link active" aria-current="page" href="Compare.html" id="nav-link-active">Compare</a>
+            <a class="nav-link active" aria-current="page" href="About us.html" id="nav-link">About Us</a>
+            <a class="nav-link active" aria-current="page" href="Contact us.html" id="nav-link">Contact Us</a>
+        
+          </div>
+        </div>
+      </div>
+    </nav>
+    </nav>
+    <!-- Nabar End  -->
+
+
+
+           
+        <!-- Hero Section Start -->
+
+   <section class="  other-hero pt-3" >
+  <div class="container-fluid  other-img-overlay">
+    
+  <p class=" other-hero-strip  ms-4 mb-4" data-aos="fade-up">Product evaluation</p>
+    <h3 class=" other-hero-h3 ms-3  " data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">Compare</h3>
+    <br>
+    <p class=" other-hero-para ms-3 mb-4 mt-1" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">A performance comparison between products.<p>
+    
+ 
+
+</div>
+  </section>
+    
+    <!-- Hero Section End -->
+
+
+     <!-- compare section  -->
+  <p class=" other-hero-strip mt-5 ms-5 " data-aos="fade-up">Comparative analysis of products</p>
+
+
+  <h2 class="mb-5 ms-5 " id="compare-title"data-aos="fade-up">Compare Air Conditioners</h2>
+
+  <div class="compare-dropdown ms-5" >
+    <label class="label">Select First Product:</label>
+    <select id="product1">
+      <option value="" class="select">--Select--</option>
+    </select>
+
+    <label class="label">Select Second Product:</label>
+    <select id="product2">
+      <option value="" class="select">--Select--</option>
+    </select>
+
+    <button id="compareBtn" class="btn btn-primary btn-sm">Compare</button>
+  </div>
+
+  <div class="compare-row" id="compareContainer"></div>
+
+  <script>
+    // List of products (from your cards)
+    const products = [
+      {
+        id: 1,
+         brand: "Voltas",
+          name: "Voltas Adjustable",
+          type: "Split AC",
+           ton: "1.5 Ton",
+        price: 62999,
+         warranty: "7 Years Compressor",
+          img: "product 9.jpeg"
+      },
+      {
+        id: 2,
+         brand: "Voltas",
+          name: "Voltas Classic",
+           type: "Window AC",
+            ton: "1.5 Ton",
+        price: 49999,
+         warranty: "5 Years Compressor",
+          img: "product 10.jpeg"
+      },
+      {
+        id: 3,
+         brand: "Blue Star",
+          name: "Blue Star Inverter",
+           type: "Split AC",
+            ton: "1.5 Ton",
+        price: 58999,
+         warranty: "5 Years Compressor",
+          img: "product 11.jpeg"
+      },
+      {
+        id: 4,
+         brand: "Blue Star",
+          name: "Blue Star Portable",
+           type: "Portable AC",
+            ton: "1 Ton",
+        price: 63999,
+         warranty: "3 Years Compressor",
+          img: "product 12.jpg"
+      },
+      {
+        id: 1,
+        brand: "Samsung",
+        name: "Samsung WindFree",
+        type: "Split AC",
+        ton: "1.5 TON",
+        price: 50999,
+        warranty: "10 Years Compressor",
+        features: ["WindFree Cooling", "Digital Inverter", "Triple Protector Plus"],
+        img: "product 5.jpeg"
+      },
+      {
+        id: 2,
+        brand: "Samsung",
+        name: "Samsung AR18",
+        type: "Split AC",
+        ton: "1 TON",
+        price: 35999,
+        warranty: "5 Years Compressor",
+        features: ["Fast Cooling", "Anti-Corrosion Durafin", "Good Sleep Mode"],
+        img: "product 6.jpeg"
+      },
+      {
+        id: 3,
+        brand: "Daikin",
+        name: "Daikin FTKF Series",
+      type: "Split AC",
+        ton: "1.5 TON",
+        price: 44999,
+      warranty: "8 Years Compressor",
+        features: ["Coanda Airflow", "Power Chill", "Econo Mode"],
+        img: "product 7.jpeg"
+      },
+      {
+        id: 4,
+        brand: "Daikin",
+        name: "Daikin JTKJ Series",
+        type: "Split AC",
+        ton: "1 TON",
+      price: 40999,
+        warranty: "10 Years Compressor",
+        features: ["3D Airflow", "PM 2.5 Filter", "Silent Operation"],
+        img: "product 8.jpeg"
+      },
+      {
+    id: 5,
+    brand: "Whirlpool",
+    name: "Whirlpool Magicool Pro",
+    type: "Split AC",
+    ton: "1.5 TON",
+    price: 42999,
+  warranty: "5 Years Compressor",
+    features: ["3D Cool Technology", "Turbo Cool", "Anti-bacterial Filter"],
+    img: "product 1.jpeg"
+  },
+  {
+    id: 6,
+    brand: "Whirlpool",
+    name: "Whirlpool Supreme Cool",
+    type: "Window AC",
+    ton: "1 TON",
+    price: 48999,
+    warranty: "3 Years Compressor",
+    features: ["6th Sense Technology", "Sleep Mode", "Dust Filter"],
+    img: "product 2.jpeg"
+  },
+  {
+    id: 7,
+    brand: "LG",
+    name: "LG Dual Inverter",
+    type: "Split AC",
+    ton: "1.5 TON",
+    price: 52999,
+    warranty: "10 Years Compressor",
+    features: ["Dual Inverter Compressor", "4-Way Swing", "HD-Filter"],
+    "img": "product 3.jpeg"
+  },
+  {
+    id: 8,
+    brand: "LG",
+    name: "LG Convertible 5-in-1",
+    type: "Split AC",
+    ton: "2 TON",
+    price: 48999,
+    warranty: "5 Years Compressor",
+    features: ["5-in-1 Convertible", "5-in-1 Convertible", "Monsoon Comfort"],
+    img: "product 4.jpeg"
+  },
+
+   
+    
+  {
+    id: 9,
+    brand: "Whirlpool",
+    name: "Whirlpool Magicool Pro",
+    type: "Split AC",
+    ton: "1.5 TON",
+    price: 42999,
+    warranty: "5 Years Compressor",
+    features: ["3D Cool Technology", "Turbo Cool", "Anti-bacterial Filter"],
+    img: "product 1.jpeg"
+  },
+  {
+    id: 10,
+    brand: "Whirlpool",
+    name: "Whirlpool Supreme Cool",
+    type: "Window AC",
+    ton: "1 TON",
+    price: 48999,
+    warranty: "3 Years Compressor",
+    features: ["6th Sense Technology", "Sleep Mode", "Dust Filter"],
+    img: "product 2.jpeg"
+  },
+  {
+    id: 11,
+    brand: "LG",
+    name: "LG Dual Inverter",
+    type: "Split AC",
+    ton: "1.5 TON",
+    price: 52999,
+    warranty: "10 Years Compressor",
+    features: ["Dual Inverter Compressor", "4-Way Swing", "HD-Filter"],
+    img: "product 3.jpeg"
+  },
+  {
+    id: 12,
+    brand: "LG",
+    name: "LG Convertible 5-in-1",
+    type: "Split AC",
+    ton: "2 TON",
+    price: 48999,
+    warranty: "5 Years Compressor",
+    features: ["5-in-1 Convertible", "5-in-1 Convertible", "Monsoon Comfort"],
+    img: "product 4.jpeg"
+  }
+
+  ];
+
+
+
+
+    const product1Select = document.getElementById("product1");
+    const product2Select = document.getElementById("product2");
+    const compareContainer = document.getElementById("compareContainer");
+
+    // Populate dropdowns
+    products.forEach(p => {
+      const option1 = document.createElement("option");
+      option1.value = p.id;
+      option1.textContent = p.name;
+      product1Select.appendChild(option1);
+
+      const option2 = document.createElement("option");
+      option2.value = p.id;
+      option2.textContent = p.name;
+      product2Select.appendChild(option2);
+    });
+
+    document.getElementById("compareBtn").addEventListener("click", () => {
+      const id1 = parseInt(product1Select.value);
+      const id2 = parseInt(product2Select.value);
+
+      if (!id1 || !id2) {
+        alert("Select two products to compare!");
+        return;
+      }
+      if (id1 === id2) {
+        alert("Select two different products!");
+        return;
+      }
+
+      const p1 = products.find(p => p.id === id1);
+      const p2 = products.find(p => p.id === id2);
+
+      // Build comparison cards
+      compareContainer.innerHTML = `
+      <div class="compare-card col-md-5">
+        <img src="${p1.img}" alt="${p1.name}">
+        <h5>${p1.name}</h5>
+        <p><strong>Brand:</strong> ${p1.brand}</p>
+        <p><strong>Type:</strong> ${p1.type}</p>
+        <p><strong>Capacity:</strong> ${p1.ton}</p>
+        <p><strong>Price:</strong> PKR ${p1.price.toLocaleString()}</p>
+        <p><strong>Warranty:</strong> ${p1.warranty}</p>
+      </div>
+      <div class="compare-card col-md-5">
+        <img src="${p2.img}" alt="${p2.name}">
+        <h5>${p2.name}</h5>
+        <p><strong>Brand:</strong> ${p2.brand}</p>
+        <p><strong>Type:</strong> ${p2.type}</p>
+        <p><strong>Capacity:</strong> ${p2.ton}</p>
+        <p><strong>Price:</strong> PKR ${p2.price.toLocaleString()}</p>
+        <p><strong>Warranty:</strong> ${p2.warranty}</p>
+      </div>
+    `;
+    });
+  </script>
+
+
+      <!--  Main-Footer Start  -->
+<footer class="text-center text-lg-start  text-muted pt-3" style="  background-color: rgb(17, 17, 17); border-top: 1px solid rgb(78, 78, 78);" >
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-left text-md-start mt-5 ">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-lg-6 col-md-12 col-12 ms-0 " id="company-section" data-aos="fade-up">
+          <!-- Content -->
+          <h4 class="text-uppercase fw-bold mb-0 " >
+            <i class="fas fa-gem me-0"></i>COSY
+          </h4>
+          <h5 class=" text-uppercase mb-3"> Air Conditioners</h5>
+          <p class="footer-text">
+          Your trusted partner for premium air conditioning solutions. We offer <br> a wide range of ACs from top brands with expert installation and after-<br>sales service
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    
+        </div> -->
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-lg-3 col-md-12 col-12" data-aos="fade-up">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 ">
+            Quick links
+          </h6>
+          <p  class="footer-text">
+            <a href="Index.html" class="text-reset" id="home" >Home</a>
+          </p>
+          <p class="footer-text">
+            <a href="Products.html" class="text-reset">Products</a>
+          </p>
+          <p class="footer-text">
+            <a href="Compare.html" class="text-reset">Compare</a>
+          </p>
+          <p class="footer-text">
+            <a href="About us.html" class="text-reset">About Us</a>
+          </p>
+             <p class="footer-text">
+            <a href="Contact us.html" class="text-reset">Contact Us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-lg-3 col-md-12 col-12" data-aos="fade-up">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p class="footer-text"><i class="fas fa-home me-3"></i> 123 Cooling Street, AC Market,</p>
+          <p class="footer-text">
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p class="footer-text" style="color: rgb(59, 130, 246);"><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p class="footer-text" style="color: rgb(59, 130, 246);"><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); border-top: 1px solid rgb(78, 78, 78);">
+    © 2026 COSY Air Conditioners. All rights reserved.
+    <!-- <a class="text-reset fw-bold" href="https://mdbootstrap.com/"> COSY Air Conditioners. All rights reserved.</a> -->
+  </div>
+  <!-- Copyright -->
+</footer>
+    <!-- Main-Footer End  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+
+</html>

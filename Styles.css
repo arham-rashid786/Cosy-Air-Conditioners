@@ -1,0 +1,1105 @@
+
+
+*{
+  
+  text-decoration: none;
+
+}
+
+/* =================  Home page CSS  ================= */
+
+
+/*======= Navbar CSS =======*/
+.nav-logo{
+  width: 50px;
+  height: 40px;
+ 
+}
+  .logo-head{
+    font-weight: bold;
+    
+  }
+  .logo-text{
+    font-weight: 100;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+#navbar{
+  background-color:rgb(17, 17, 17) ;
+  
+}
+
+
+.navbar-toggler{
+border: none;
+
+}
+
+
+.navbar-toggler-icon{
+height: 20px;
+width: 20px;
+}
+#navbar-nav{
+  gap: 6px;
+}
+#navbar-brand{
+  color: white;
+  font-weight: bold;
+  font-size: 17;
+}
+
+#nav-link{
+
+  color: rgb(209, 209, 209);
+  font-weight: 400;
+ padding: 6px 18px;
+ font-size: 20px;
+  
+}
+#nav-link:hover{
+  
+  color:rgb(59, 130, 246);
+  border-radius: 6px;
+ padding: 6px 18px;
+
+}
+#nav-link-active{
+ font-size: 20px;
+
+  font-weight: 400;
+ padding: 6px 18px;
+ color:rgb(59, 130, 246);
+
+ padding: 6px 18px;
+  
+}
+
+/*======= Navbar CSS =======*/
+
+
+/*======= Hero section CSS =======*/
+
+.hero{
+  width: 100%;
+
+
+  background-image: url(https://i.pinimg.com/1200x/a2/39/94/a23994071dffbfa334f370341080cb1c.jpg);
+  color: white;
+  /* text-align: center; */
+  background-size: cover;
+  /* background-position:center; */
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+.hero-logo{
+  width: 30px;
+  height: 20px;
+}
+.img-overlay{
+  width: 100%;
+  height: 100vh;
+  background-color:rgb(0, 0, 0, 0.8) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-top: 90px;
+
+}
+
+
+  
+
+.hero-h1{
+  font-size: 55px;
+/* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-weight:bold;
+   color: white; 
+   line-height: 50px;
+
+  
+}
+.hero-span{
+  font-size: 42px;
+/* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-weight:bold;
+  color: rgb(209, 209, 209);
+   line-height: 50px;
+
+  
+}
+
+  .hero-para{
+/* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+font-size: 20px;
+  color: rgb(209, 209, 209);
+
+  }
+  .hero-strip{
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+font-size: 20px;
+font-weight: 400;
+color:rgb(59, 130, 246);
+ 
+  
+  
+
+  }
+
+  #hero-right-side{
+    width: 520px;    
+  }
+
+.hero-right-img{
+   
+ 
+  height: 40vh;
+  border-radius: 20px;
+}
+
+
+
+/*======= Hero section CSS =======*/
+
+
+/*======= Home Detail Cards CSS =======*/
+
+.home-card{
+  width: 100%;
+  color:white ;
+  text-align: center;
+  background-size: cover;
+  /* background-position:center; */
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.home-card-strip{
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+font-size: 17px;
+font-weight: 400;
+color:rgb(59, 130, 246);
+ 
+
+  }
+.home-card-h2{
+  font-weight: bold;
+}
+.home-card-h2:hover{
+  color:rgb(59, 130, 246);
+ 
+}
+.home-card-para{
+  color:rgb(209, 209, 209) ;
+
+}
+#detail-card {
+
+  transition: transform 0.4s ease;
+}
+
+#detail-card:hover{
+  transform: scale(1.1);
+
+
+
+}
+
+
+
+
+/* cards  */
+/* From Uiverse.io by Li-Deheng */ 
+.like-dislike-container {
+  --dark-grey: #c2c1c1;
+  --middle-grey: #767676;
+  --lightest-grey: linear-gradient(#1b1b1b,#333333);
+  --border-radius-main: 10px;
+  --border-radius-icon: 50px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  color: var(--dark-grey);
+  opacity: .9;
+  margin: auto;
+  padding: 1.5rem;
+  font-weight: 600;
+  background: var(--lightest-grey);
+  max-width: max-content;
+  border-radius: var(--border-radius-main);
+  box-shadow: rgba(53, 53, 53, 0.25) 0px 54px 55px, rgba(73, 73, 73, 0.12) 0px -12px 30px, rgba(73, 73, 73, 0.12) 0px 4px 6px, rgba(110, 110, 110, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+  transition: .2s ease all;
+}
+
+.like-dislike-container:hover {
+  box-shadow: rgba(53, 53, 53, 0.25) 0px 54px 55px, rgba(73, 73, 73, 0.12) 0px -12px 30px, rgba(73, 73, 73, 0.12) 0px 4px 6px, rgba(110, 110, 110, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+
+}
+
+.like-dislike-container .tool-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 0;
+  right: 0;
+  border-radius: var(--border-radius-main);
+  
+}
+
+.like-dislike-container .btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: .8rem;
+  height: .8rem;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+  background-color: #ff000080;
+  border: none;
+  border-radius: var(--border-radius-main);
+  transition: .2s ease all;
+  
+}
+
+.like-dislike-container .btn-close:hover {
+  width: 1rem;
+  height: 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #ff0000cc;
+  box-shadow: var(--shadow-active);
+  
+}
+
+.like-dislike-container .btn-close:active {
+  width: .9rem;
+  height: .9rem;
+  font-size: .9rem;
+  color: #ffffffde;
+  --shadow-btn-close: 0 3px 3px 0 #00000026;
+  box-shadow: var(--shadow-btn-close);
+
+}
+
+
+  #home-card:hover{
+
+  border: 1px solid rgb(59, 130, 246) ;
+  }
+  .text-head{
+    color: white;
+  }
+  .text-content{
+    font-weight: 100;
+    color: rgb(209, 209, 209);
+  }
+  .card-icon{
+
+    width: 50px;
+    height: 50px;
+  }
+
+/*======= Home Detail Cards CSS =======*/
+
+
+/*======= Home Products CSS =======*/
+
+.partner-brands{
+  width: 100%;
+
+  color:white ;
+  text-align: center;
+  background-size: cover;
+  /* background-position:center; */
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.brands-strip{
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+font-size: 20px;
+font-weight: 400;
+   color:rgb(59, 130, 246); 
+  
+  
+
+  }
+.brands-h2{
+  font-weight: bold;
+}
+
+.brands-para{
+color: rgb(209, 209, 209);
+
+}
+.brands-btn{
+  display: flex;
+gap: 40px;
+flex-wrap: wrap;
+
+  
+}
+
+
+
+/* btn  */
+/* From Uiverse.io by e-coders */ 
+.brands {
+  --lightest-grey: linear-gradient(#000000,#222222);
+
+ appearance: none;
+ border-radius: 0.900rem;
+ box-sizing: border-box;
+  color:rgb(190, 190, 190);
+
+
+ cursor: pointer;
+ display: inline-block;
+ font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+ font-size: 16px;
+ background: var(--lightest-grey);
+ 
+ border: 1px solid rgb(190, 190, 190);
+ font-weight: 600;
+ line-height: normal;
+ margin: 0;
+ min-height: 3.75em;
+ min-width: 0;
+ outline: none;
+ padding: 1em 2.3em;
+ text-align: center;
+ text-decoration: none;
+ transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ will-change: transform;
+}
+
+.brands:disabled {
+ pointer-events: none;
+}
+
+.brands:hover {
+  background-color: transparent;
+
+ color: #fff;
+
+border: 1px solid rgb(59, 130, 246);
+
+
+ box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+ transform: translateY(-2px);
+}
+
+.brands:active {
+ box-shadow: none;
+ transform: translateY(0);
+}
+/* btn  */
+
+
+/*======= Home Products CSS =======*/
+
+
+/*======= Feature Products CSS =======*/
+
+
+.Feature-text{
+  color:white;
+  width: 100%;
+margin-left: 0px;
+  text-align: left;
+  background-size: cover;
+  /* background-position:center; */
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+.Feature-h2{
+  font-weight: bolder;
+  line-height: 0;
+}
+.Feature-h2:hover{ 
+  color: rgb(59, 130, 246);
+
+}
+.Feature-para{
+color: rgb(209, 209, 209);
+
+
+}
+/* Learn More btn  */
+/* From Uiverse.io by reshades */ 
+
+
+.view-all {
+color: white;
+  background-color:transparent;
+  border: 2px solid  rgb(78, 78, 78);
+  
+  width: 8.5em;
+  height: 2.9em;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+}
+
+.view-all:hover {
+background-color: rgb(209, 209, 209);
+  /* border: 1px solid  rgb(59, 130, 246); */
+color:rgb(17, 17, 17); 
+  cursor: pointer;
+}
+
+.view-all svg {
+  width: 1.1em;
+
+  margin: 0.3em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+  color:rgb(190, 190, 190);
+
+
+
+}
+.view-all:hover a{
+  color: rgb(17, 17,17);
+}
+
+.view-all:hover svg {
+  transform: translateX(5px);
+color:rgb(17, 17, 17); 
+
+
+}
+
+.text-btn {
+  margin: 0 1.5em;
+
+}
+.view-link{
+  text-decoration: none;
+  color:rgb(190, 190, 190);
+
+}
+
+
+
+
+
+
+/*==== Cards CSS ====*/
+
+#cards{
+  background: linear-gradient(rgb(26, 26, 26),rgb(39, 39, 39));
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+  box-shadow: rgba(53, 53, 53, 0.25) 0px 54px 55px, rgba(73, 73, 73, 0.12) 0px -12px 30px, rgba(73, 73, 73, 0.12) 0px 4px 6px, rgba(110, 110, 110, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px
+
+  }
+
+
+  .card__badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background:rgb(0, 0, 0);
+  color:rgb(255, 255, 255) ;
+  padding: 0.25em 0.5em;
+  border-radius: 999px;
+  font-size: 0.7em;
+  font-weight: 700;
+
+
+}
+
+#cards:hover{
+  transform: scale(1.1);
+box-shadow: rgba(46, 46, 46, 0.48) 6px 2px 16px 0px, rgba(70, 70, 70, 0.8) -6px -2px 16px 0px;
+
+}
+
+.card-img-top{
+  height: 28vh;
+}
+
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.card__title {
+  color: white;
+  font-size: 1.1em;
+  margin: 0;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.star-rating{
+  width: 15px;
+  height: 15px;
+}
+.rate-stars{
+  color: rgb(190, 190, 190);
+}
+.card__description {
+  color: rgb(190, 190, 190);
+  font-size: 0.75em;
+  margin: 0;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  margin-top: auto;
+}
+.card-list{
+  font-size: 13px;
+  color: rgb(190, 190, 190);
+
+}
+.card__price {
+  font-weight: 700;
+  color: rgb(235, 235, 235);
+
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+.caption{
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+
+
+}
+.btn-card-1{
+  font-weight: 400; 
+  font-size: 15px;
+  background-color:rgb(17, 17, 17);
+  color: white;
+  border: 1px solid rgb(78, 78, 78);
+  width: 90px; 
+margin-left:0 ;
+border-radius: 6px;
+
+}
+.btn-card-1:hover{ 
+  border: 1px solid rgb(59, 130, 246);
+
+
+}
+
+.btn-card-2{
+  font-weight: 400; 
+  font-size: 15px;
+  color: white;
+  background-color: rgb(59, 130, 246);
+  border: 1px solid rgb(190, 190, 190);
+  width: 90px; 
+  border-radius: 6px;
+
+}
+.btn-card-2:hover{ 
+  background-color: rgb(17, 17, 17);
+  border: 1px solid rgb(59, 130, 246);
+  color: white;
+}
+#btn-container{
+  margin-left: 0;
+}
+
+
+
+
+
+/*====  Cards CSS ====*/
+
+/*======= Feature Products CSS =======*/
+
+
+/*======= Sub Footer CSS =======*/
+
+.sub-footer{
+  width: 100%;
+background-color: black;
+  
+  text-align: center;
+  background-size: cover;
+  /* background-position:center; */
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+   border-top: 1px solid rgb(78, 78, 78);
+   
+
+}
+.sub-footer-h2{
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  
+}
+.sub-footer-para{
+color: rgb(209, 209, 209);
+  
+}
+.sub-btn1{
+  background-color: rgb(59, 130, 246) ;
+  border-radius: 7px;
+ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.sub-btn1:hover{
+
+  border: 1px solid rgb(59, 130, 246);
+  --lightest-grey: linear-gradient(#1d1d1d,#333333);
+background: var(--lightest-grey);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.sub-btn2{
+  --lightest-grey: linear-gradient(#1d1d1d,#333333);
+  background: var(--lightest-grey);
+  border-radius: 7px;
+  
+
+  border: 1px solid rgba(209, 209, 209);
+}
+.sub-btn2:hover{
+  background-color:rgba(46, 46, 46, 0.8) ;
+  border: 1px solid rgb(59, 130, 246) ;
+}
+.compare-btn{
+  color:white  ;
+  font-weight:600;
+  text-decoration: none;
+}
+.compare-btn:hover{
+  color:white  ;
+
+  
+}
+.contact-btn{
+  color:rgb(255, 255, 255);
+  font-weight:600;
+
+  text-decoration: none;
+}
+.contact-btn:hover{
+  color:rgb(255, 255, 255);
+
+}
+
+/*======= Sub Footer CSS =======*/
+
+
+
+/*======= Main Footer CSS =======*/
+
+.text-reset{
+  text-decoration: none;
+  
+
+}
+.text-reset:hover{
+text-decoration: underline solid rgb(59, 130, 246);
+  
+ }
+
+.text-uppercase{
+color:white;
+
+}
+.footer-text{
+  color: rgb(209, 209, 209);
+}
+
+/*======= Main Footer CSS =======*/
+
+/* =================  Home page CSS  ================= */
+
+
+
+/* =================  Product page CSS  ================= */
+
+
+
+/*======= Hero Section CSS =======*/
+
+.other-hero{
+  width: 100%;
+
+
+  background-image: url(https://i.pinimg.com/1200x/a2/39/94/a23994071dffbfa334f370341080cb1c.jpg);
+  color: white;
+  background-size: cover;
+  /* background-position:center; */
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+.other-img-overlay{
+  width: 100%;
+  height: 50vh;
+  background-color:rgb(0, 0, 0, 0.8) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-top: 90px;
+
+}
+
+.other-hero-strip{
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+font-size: 20px;
+font-weight: 400;
+color:rgb(59, 130, 246);
+ 
+
+  }
+  
+
+.other-hero-h3{
+  font-size: 55px;
+/* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-weight:bold;
+   color: white; 
+   line-height: 5px;
+
+  
+}
+
+
+  .other-hero-para{
+/* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+font-size: 20px;
+  color: rgb(209, 209, 209);
+
+  }
+
+/*======= Filter Button CSS =======*/
+
+
+  .filter-btn {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  background: #999;
+  color: white;
+}
+
+.filter-btn.active {
+  background: #007bff;
+  color: white;
+}
+
+
+/*======= Filter Button CSS =======*/
+
+
+
+
+/* =================  Product page CSS  ================= */
+
+
+
+
+/* =================  About page CSS  ================= */
+
+
+/*======= About Section CSS =======*/
+.about-img{
+  
+  width: 100%; 
+  border-radius: 10px;
+ 
+}
+
+
+
+.para-about{
+  color: rgb(209, 209, 209);
+}
+.story-title{
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(59, 130, 246);
+}
+.heading-texts{
+  color: white;
+  font-weight: bold;
+}
+
+
+
+#about-banner{
+  width: 100%;
+  background-color:black ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#container-row{
+
+  display: flex;
+  flex-direction:row;
+    gap: 115px;
+
+
+}
+
+.data-h2{
+  font-size: 40px;
+  font-weight: bold;
+   color: rgb(209, 209, 209); 
+
+}
+.data-para{
+   color:  rgb(59, 130, 246); 
+  
+
+}
+#about-data{
+  display: flex; 
+  flex-direction: column;
+   gap: 0px;
+}
+
+
+
+/*======= About Section CSS =======*/
+
+
+
+/*======= About Cards CSS =======*/
+.about-card{
+  width: 100%;
+
+
+  color:white;
+  text-align: center;
+  background-size: cover;
+  /* background-position:center; */
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.about-card-h2{
+  font-weight: bold;
+}
+.about-card-para{color: rgb(209, 209, 209);
+
+}
+/*======= About Cards CSS =======*/
+
+
+
+/*======= Detailed section  CSS =======*/
+
+.left-box { 
+margin-top: 80px;
+  
+}
+.right-box{
+
+  border: 1px solid  rgb(78, 78, 78);
+  padding: 15px 15px;
+  border-radius: 12px;
+}
+.about-img{
+  
+  width: 100%; 
+  border-radius: 10px;
+}
+.time{
+  color:rgb(209, 209, 209);
+
+}
+.para-about{
+ 
+  color:rgb(209, 209, 209);
+}
+.story{
+  font-size: 18px;
+  font-weight: 400;
+  color:  rgb(59, 130, 246);
+}
+.heading-text{
+  color:white;
+  font-weight: bold;
+}
+.img-para{
+  color:rgb(209, 209, 209);
+  font-size: 15px;
+}
+.img-heading{
+  font-size: 19px;
+  color: white;
+}
+
+/*======= Detailed section  CSS =======*/
+
+/* =================  About page CSS  ================= */
+
+
+
+/* =================  Contact Us page CSS  ================= */
+
+#left-row{
+  border: 1px solid rgb(78, 78, 78); 
+
+  border-radius: 10px;
+  padding: 10px;
+  --lightest-grey: linear-gradient(#1f1f1f,#1b1919);
+  background: var(--lightest-grey);
+}
+
+
+
+.box-title{ 
+  color: white;
+  font-size:21px ;
+  font-weight: 600;
+}
+.box-para{
+  color:rgb(209, 209, 209);
+font-size: 18xpx;
+}
+.form-icon{
+  width: 18px;
+  height: 18px;
+}
+#right-row{
+  --lightest-grey: linear-gradient(#1f1f1f,#1b1919);
+  background: var(--lightest-grey);
+  border: 1px solid rgb(78, 78, 78); 
+  
+
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#label-name{ 
+
+  color: white;
+  font-size:18px ;
+  font-weight: 400;
+}
+.form-control{ 
+  background-color: rgb(17, 17, 17);
+  
+  border: 1px solid  rgb(78, 78, 78);
+
+}
+.form-control:hover{ 
+  border: 1px solid  rgb(59, 130, 246);
+
+}
+.right-title{ 
+  color: white;
+  font-size:25px ;
+  font-weight: 500;
+}
+#form-btn{
+  font-weight: 500; 
+  font-size: 20px;
+  color: white;
+  background-color: rgb(59, 130, 246);
+  
+  padding-left: 6px;
+  padding-right: 6px;
+ 
+}
+#form-btn:hover{ 
+  --lightest-grey: linear-gradient(#1f1f1f,#1b1919);
+  background: var(--lightest-grey);
+  border: 1px solid  rgb(59, 130, 246);
+
+}
+.send-icon{
+  width: 15px;
+  height: 15px;
+}
+.quick-links-btn{
+  display: flex;
+gap: 20px;
+}
+.quick-title{
+  color: white;
+  font-size:18px ;
+  font-weight: 600;
+}
+#quick-btn{
+  --lightest-grey: linear-gradient(#1f1f1f,#1b1919);
+  background: var(--lightest-grey);
+  font-size: 16px;
+  border: 1px solid rgb(209, 209, 209);
+  color: rgb(209, 209, 209);
+}
+#quick-btn:hover{
+  border: 1px solid  rgb(59, 130, 246);
+  color:  rgb(59, 130, 246);
+
+}
+.mail-icon{
+  width: 15px;
+  height: 15px;
+}
+.quick-para{
+  color: rgb(209, 209, 209);
+
+
+}
+
+
+/* =================  Contact Us page CSS  ================= */
+
+/* =================  Compare page CSS  ================= */
+
+/* =================  Compare page CSS  ================= */
+
